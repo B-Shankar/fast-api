@@ -9,10 +9,14 @@ python3 -m venv .venv
 echo ".venv" > .gitignore
 
 
-pip install --upgrade pip
+pip install --upgrade pip   # Check
 
 pip install "fastapi[standard]"
 
 pip freeze > requirements.txt
 
 touch main.py
+
+
+# To Run
+fastapi dev main.py
